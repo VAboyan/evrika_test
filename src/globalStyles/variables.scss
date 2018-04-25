@@ -1,0 +1,98 @@
+$mm-orange: #ff5f00;
+$mm-dark-orange: #ff9a00;
+$mm-light-orange: #f7b040;
+$mm-white: #fff;
+$mm-lightGray: #f5f5f5;
+$mm-textLightGray: #a3a3a3;
+$mm-blue: #2e2771;
+$mm-gray: #eee;
+$mediumGray: #e3e3e3;
+$mm-darkGray: #ddd;
+$mm-textGray: #2a2a2a;
+$mm-textBlack: #161616;
+$mm-blackBg: #3b3b3b;
+$mm-graySvg: #8b8b8b;
+$mm-svgGray: #ababab;
+$mm-red: #ed2026;
+$mm-green: #1c9f4f;
+$mm-chartBarColor: #d7d7d7;
+$mm-chartBorder: 1px solid rgba(216, 216, 216, .2);
+
+$mm-fb: #3b5998;
+$mm-vk: rgb(61, 92, 131);
+$mm-yt: red;
+$mm-twitter: #1da1f2;
+$mm-callBack: #1f8ceb;
+$mm-linkedIn: #0077b5;
+
+$mm-select-border: #d8d8d8;
+$mm-selected-bg: #faf5ee;
+$mm-selected-border: #f3c8af;
+
+@mixin flex
+(
+  $align: flex-start,
+  $justify: flex-start,
+  $direction: row,
+  $wrap: wrap
+) {
+  display: flex;
+  align-items: $align;
+  justify-content: $justify;
+  flex-direction: $direction;
+  flex-wrap: $wrap;
+}
+
+@mixin button
+(
+  $width,
+  $height,
+  $backgroundColor: $mm-orange,
+  $fontSize: 14px,
+  $border: none,
+  $boxShadow: 0 2px 10px 0 rgba(0, 0, 0, .1),
+  $borderRadius: 2px,
+  $color: $mm-white,
+  $cursor: pointer,
+  $shrink: 0,
+  $grow: 0
+) {
+  width: $width;
+  height: $height;
+  background-color: $backgroundColor;
+  font-size: $fontSize;
+  border: $border;
+  border-radius: $borderRadius;
+  box-shadow: $boxShadow;
+  color: $color;
+  cursor: $cursor;
+  flex-shrink: $shrink;
+  flex-grow: $grow;
+  outline: none;
+}
+
+@mixin text
+(
+  $line-height,
+  $size: 14px,
+  $color: $mm-white,
+  $weight: 500,
+  $textAlign: center
+) {
+  line-height: $line-height;
+  font-size: $size;
+  color: $color;
+  font-weight: $weight;
+  text-align: $textAlign;
+}
+
+@mixin svg
+(
+  $fill,
+  $width: 100%,
+  $height: 100%
+) {
+  fill: $fill;
+  width: $width;
+  height: $height;
+}

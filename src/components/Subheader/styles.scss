@@ -1,0 +1,40 @@
+.subheader {
+  @include flex(center, center, row, nowrap);
+  width: 100%;
+  background-color: #393185;;
+}
+
+
+.subheader-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  max-width: 1240px;
+  padding: 30px 0;
+
+}
+
+.subheader__item {
+  font-size: 24px;
+  font-weight: bold;
+  color: #ffffff;
+  text-transform: uppercase;
+  letter-spacing: 2.4px;
+}
+
+.subheader__item-svg-container {
+  @include flex(center, center);
+  width: 18px;
+  height: 18px;
+  margin-left: 20px;
+
+  & > svg {
+    @include svg($mm-white);
+  }
+ }
+
+.subheader__item-container {
+  @include flex(center, flex-start);
+
+}

@@ -1,0 +1,30 @@
+@import 'variables';
+@import 'reset';
+
+html, body {
+  height: 100%;
+  font-family: "Roboto", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  position: relative;
+}
+
+a {
+  text-decoration: none;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.hide {
+  display: none !important;
+}
+
+.show {
+  display: flex !important;
+}
+
+input:-webkit-autofill {
+  background-color: $mm-white !important;
+}

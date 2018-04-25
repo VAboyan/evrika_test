@@ -1,0 +1,149 @@
+.header {
+  width: 100%;
+}
+
+.header-top {
+  @include flex(center, center, row, nowrap);
+  width: 100%;
+  padding: 10px 100px;
+  border-bottom: 1px solid #e2e2ed;
+}
+
+.header-top-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  max-width: 1240px;
+}
+
+.header-left {
+  @include flex(flex-start, flex-start, row, nowrap);
+}
+
+.header-left-item {
+  font-size: 13px;
+  color: #2e2771;
+  text-transform: uppercase;
+
+  &:not(:first-child) {
+    padding-left: 50px;
+  }
+}
+
+.header-right {
+  @include flex(flex-end, start, row, nowrap );
+}
+
+.star-container {
+  width: 15px;
+  height: 15px;
+
+  & > svg {
+    @include svg($mm-blue);
+  }
+}
+
+.header-right-item {
+  margin-left: 20px;
+}
+
+.header-bottom {
+  @include flex(center, center, row, nowrap);
+  padding: 18px 100px 31px 100px;
+  width: 100%;
+}
+
+.header-bottom-container {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 1240px;
+}
+
+.header-bottom-setings {
+  display: flex;
+  flex-direction: column;
+}
+
+.header-logo {
+  @extend .header-bottom-setings;
+
+}
+
+.headelr-logo-logo {
+  background: url("/static/images/logo.png");
+  display: block;
+  width: 155px;
+  height: 47px;
+}
+
+.header-logo__text {
+  font-size: 14px;
+  font-weight: 900;
+  color: #393185;
+  margin-top: 12px;
+}
+
+.header-number {
+  @extend .header-bottom-setings;
+
+}
+
+.header-number__text {
+  font-size: 16px;
+  font-weight: 900;
+  color: #262626;
+}
+
+.header-number__info {
+  margin-top: 5px;
+}
+
+.header-number-mail {
+  font-size: 16px;
+  color: #393185;
+  text-decoration: underline;
+  margin-top: 12px;
+}
+
+.header-address {
+  @extend .header-bottom-setings;
+
+}
+
+.header-address__text {
+  margin-top: 5px;
+}
+
+.header-address__text-link {
+  text-decoration: underline;
+  margin-top: 16px;
+}
+
+.header-button{
+  @extend .header-bottom-setings;
+
+}
+
+
+.header-button-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 207px;
+  height: 47px;
+  background-color: #e50a62;
+  color: #ffffff;
+  margin-bottom: 18px;
+}
+
+.header-button-button:hover {
+  border: 3px solid #e50a62;
+  background-color: #ffffff;
+  color: #e50a62;
+}
+
+.header-button__link {
+  text-decoration: underline;
+}

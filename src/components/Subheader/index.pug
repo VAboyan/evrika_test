@@ -1,0 +1,13 @@
+div.subheader
+  div.subheader-container
+    -
+      var menu = [
+        'печатная продукция',
+        'услуги',
+        'нружная и интерерная реклама'
+      ]
+    each name in menu
+      div.subheader__item-container
+        span.subheader__item= name
+        div.subheader__item-svg-container
+          include ../Icons/arrow
