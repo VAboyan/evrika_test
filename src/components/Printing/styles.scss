@@ -1,0 +1,43 @@
+.printing {
+  @include flex(center, center);
+  width: 100%;
+  padding: 100px 100px;
+}
+
+.printing-container {
+  @include flex(flex-start, flex-start);
+  width: 100%;
+  max-width: 1240px;
+}
+
+.printing-left {
+  @include flex(flex-start, center);
+  padding-top: 10px;
+}
+
+.printing-left__dash {
+  width: 85px;
+  height: 3px;
+  background-color: #e50a62;
+}
+
+.printing-right {
+  @include flex(flex-start, flex-start);
+  margin-left: 125px;
+}
+
+.printing-right-title {
+  font-size: 24px;
+  font-weight: bold;
+  letter-spacing: 2.4px;
+  color: #393185;
+}
+
+.printing-right-container {
+  @include flex(center, center);
+}
+
+.tirage-img {
+  width: 295px;
+  height: 221px;
+}

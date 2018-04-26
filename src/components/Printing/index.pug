@@ -1,0 +1,20 @@
+div.printing
+  div.printing-container
+    div.printing-left
+      div.printing-left__dash
+    div.printing-right
+      h2.printing-right-title Популярные тиражи
+      div.printing-right-container
+      -
+        var tirages = [
+          {
+            title: "Растяжки",
+            image: "/static/images/1.png"
+          },
+          {
+            title: "Растяжки",
+            image: "/static/images/1.png"
+          }
+        ]
+      each tirage in tirages
+        +TirageBlock(tirage)
