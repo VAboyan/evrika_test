@@ -12,7 +12,6 @@
 
 .printing-left {
   @include flex(flex-start, center);
-  padding-top: 10px;
 }
 
 .printing-left__dash {
@@ -30,14 +29,46 @@
   font-size: 24px;
   font-weight: bold;
   letter-spacing: 2.4px;
-  color: #393185;
+  color: $mm-blue-text;
+  width: 100%;
+  margin-top: -10px;
+  padding-bottom: 50px;
 }
 
 .printing-right-container {
   @include flex(center, center);
 }
 
+.tirage {
+  padding: 10px;
+}
+
+.tirage-title {
+  display: block;
+  text-decoration: underline;
+  font-weight: bold;
+  color: $mm-blue-text;
+  padding-bottom: 20px;
+}
+
 .tirage-img {
   width: 295px;
   height: 221px;
+}
+
+.tirage-block {
+  @include flex(center, center);
+  width: 295px;
+  height: 221px;
+  border: 10px solid $mm-pink;
+  margin-top: 50px;
+  margin-left: 10px;
+}
+
+.tirage-block-text {
+  text-decoration: underline;
+  font-weight: bold;
+  color: $mm-pink;
+  font-size: 26px;
+  padding-left: 35px;
 }

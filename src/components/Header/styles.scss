@@ -32,7 +32,7 @@
 }
 
 .header-right {
-  @include flex(flex-end, start, row, nowrap );
+  @include flex(center, start, row, nowrap );
 }
 
 .star-container {
@@ -133,13 +133,13 @@
   align-items: center;
   width: 207px;
   height: 47px;
-  background-color: #e50a62;
+  background-color: $mm-pink;
   color: #ffffff;
   margin-bottom: 18px;
 }
 
 .header-button-button:hover {
-  border: 3px solid #e50a62;
+  border: 3px solid $mm-pink;
   background-color: #ffffff;
   color: #e50a62;
 }
