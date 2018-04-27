@@ -5,38 +5,38 @@ div.printing
     div.printing-right
       h2.printing-right-title Популярные тиражи
       div.printing-right-container
-      -
-        var tirages = [
-          {
-            title: "Растяжки",
-            image: "/static/images/1.png"
-          },
-          {
-            title: "Плакаты",
-            image: "/static/images/1.png"
-          },
-          {
-            title: "Пресс-волы",
-            image: "/static/images/1.png"
-          },
-          {
-            title: "Штендеры",
-            image: "/static/images/1.png"
-          },
-          {
-            title: "Ролл-апы",
-            image: "/static/images/1.png"
-          },
-          {
-            title: "Лайтбоксы",
-            image: "/static/images/1.png"
-          },
-          {
-            title: "Стенды",
-            image: "/static/images/1.png"
-          }
-        ]
-      each tirage in tirages
-        +TirageBlock(tirage)
-      div.tirage-block
-        span.tirage-block-text Оформить индивидуальный заказ
+        -
+          var tirages = [
+            {
+              title: "Растяжки",
+              image: "/static/images/1.png"
+            },
+            {
+              title: "Плакаты",
+              image: "/static/images/2.png"
+            },
+            {
+              title: "Пресс-волы",
+              image: "/static/images/3.png"
+            },
+            {
+              title: "Штендеры",
+              image: "/static/images/4.png"
+            },
+            {
+              title: "Ролл-апы",
+              image: "/static/images/5.png"
+            },
+            {
+              title: "Лайтбоксы",
+              image: "/static/images/6.png"
+            },
+            {
+              title: "Стенды",
+              image: "/static/images/7.png"
+            }
+          ]
+        each tirage in tirages
+          +TirageBlock(tirage)
+        div.tirage-block
+          span.tirage-block-text Оформить индивидуальный заказ
