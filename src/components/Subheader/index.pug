@@ -6,8 +6,59 @@ div.subheader
         'услуги',
         'нружная и интерерная реклама'
       ]
-    each name in menu
-      div.subheader__item-container
+    each name, index in menu
+      div.subheader__item-container(class= index === 0 ? 'subheader__item-container_first': '')
+        div.subheader__pop-up
+          div.subheader__pop-up_top
+            div.footer-container-tipograf
+              span.footer-container-tipograf-title Визитки
+              div.footer-container-dash
+            div.footer-container-tipograf
+              span.footer-container-tipograf-title Календари
+              div.footer-container-dash
+              ul
+                li Календари-домик
+                li Календарь перекидной
+                li Календарь корманный
+                li Календарь квартальный
+                li Календарь отрывной
+            div.footer-container-tipograf
+              span.footer-container-tipograf-title Листовки и флаеры
+              div.footer-container-dash
+              ul
+                li Листовки 100x200
+                li Листовки А4
+                li Листовки А5
+                li Листовки А6
+            div.footer-container-tipograf
+              span.footer-container-tipograf-title Буклеты
+              div.footer-container-dash
+              ul
+                li Буклеты А4
+                li Буклеты А3
+          div.subheader__pop-up-bottom
+            div.footer-container-tipograf
+              span.footer-container-tipograf-title Меню
+              div.footer-container-dash
+            div.footer-container-tipograf.brosh
+              span.footer-container-tipograf-title Брошюры
+              div.footer-container-dash
+              ul
+                li Брошюры 99x210
+                li Брошюры A5
+                li Брошюры 200x200
+            div.footer-container-tipograf
+              span.footer-container-tipograf-title Афиши
+              div.footer-container-dash
+              ul
+                li Афиша А1/А2
+                li Афиша А3
+            div.footer-container-tipograf.blank
+              span.footer-container-tipograf-title Бланки и самокопирующиеся бланки
+              div.footer-container-dash
+              ul
+                li Бланки А4
+                li Бланки А5
         span.subheader__item= name
         div.subheader__item-svg-container
           include ../Icons/arrow
