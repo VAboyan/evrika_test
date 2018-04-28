@@ -83,8 +83,9 @@ gulp.task('watch', function () {
 });
 
 gulp.task('default', function (cb) {
-  let tasks = []
-  if (env.dev) tasks = tasks.concat(['connect', 'watch'])
-
-  runSequence('clean', ['scss', 'pug', 'images', 'static', 'fonts'], tasks, cb)
+  if (env.dev) {
+      runSequence('clean', ['scss', 'pug', 'images', 'static', 'fonts'], ['connect', 'watch'], cb)
+  } else {
+      runSequence('clean', ['scss', 'pug', 'images', 'static', 'fonts'], cb)
+  }
 });
